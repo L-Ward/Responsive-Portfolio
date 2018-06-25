@@ -12,13 +12,13 @@ body {
 header { 
     background: #ffffff;
     border-bottom: 1px solid #cccccc;
-    padding: 20px 20px;
+    padding: 20px 0px;
     width: 100%;
 }
 
 .row-header {
     margin: auto;
-    width: 960px;
+    width: 980px;
 }
 
 .col-name {
@@ -66,7 +66,7 @@ header {
     margin: 20px auto 50px auto;
     background: #ffffff;
     color: #777777;
-    width: 960px;
+    width: 980px;
     border: 1px solid #dddddd;
     padding: 10px 20px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -93,7 +93,6 @@ hr {
 
  /* Footer formatting */
 footer { 
-    clear: both;
     background-color: #666666;
     color: white;
     text-align: center;
@@ -182,11 +181,16 @@ p {
 
 /* Media Queries  */
 
-/* Navbar media queries */
+/* Navbar media queries large screen*/
 @media only screen and (max-width: 980px) {
-    .row-header {
+    header {
         width: 100%;
         max-width: 980px;
+    }
+
+    .row-header {
+        max-width: 980px;
+        width: 90%;
     }
 
     .content {
@@ -195,10 +199,16 @@ p {
     }
 }
 
+/* Navbar media queries medium screen*/
 @media only screen and (max-width: 768px) {
-    .row-header {
+    header {
         width: 100%;
-        max-width: 760px;
+        max-width: 768px;
+    }
+
+    .row-header {
+        max-width: 768px;
+        width: 90%;
     }
 
     .content {
@@ -207,10 +217,11 @@ p {
     }
 }
 
+/* Navbar media queries small screen*/
 @media only screen and (max-width: 640px) {
     .row-header {
-        flex-wrap: wrap;
         text-align: center;
+        width: 100%;
     }
 
     header {
