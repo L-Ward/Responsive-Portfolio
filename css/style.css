@@ -132,20 +132,22 @@ p {
 }
 
 .column {
-    flex: 25%;
+    flex: 50%;
     padding: 0 5px;
-    max-width: 33.3%;
 }
 
 .imgHolder {
     position: relative;
+    max-width: 300px;
+    max-height: auto;
+    margin: auto;
 }
 
 .imgHolder span {
     clear: both;
     position: absolute;
     bottom: 10px;
-    width: 200px;
+    width: 300px;
     height: 20%;
     background-color: #4aaaa5;
     color: #ffffff;
@@ -252,5 +254,3 @@ p {
         width: 80%;
     }
 }
-
-/* Portfolio content media queries */
