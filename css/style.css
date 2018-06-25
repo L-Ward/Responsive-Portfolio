@@ -16,9 +16,16 @@ header {
     width: 100%;
 }
 
-section {
+.row-header {
     margin: auto;
     width: 960px;
+}
+
+.col-name {
+    display: inline;
+}
+.col-links {
+    display: inline;
 }
 
 #name{
@@ -162,3 +169,68 @@ p {
     padding: 5px 15px;
 
 }
+
+/* Media Queries  */
+
+/* Navbar media queries */
+@media only screen and (max-width: 980px) {
+    .row-header {
+        width: 100%;
+        max-width: 980px;
+    }
+
+    .content {
+        max-width: 980px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row-header {
+        width: 100%;
+        max-width: 760px;
+    }
+
+    .content {
+        max-width: 768px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .row-header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    header {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .col-name {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #4aaaa5;
+    }
+
+    .col-links {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #name {
+        width: 100%;
+    }
+    
+    .link {
+        margin-top: 10px;
+        float: none;
+    }
+}
+
+/* About media queries */
