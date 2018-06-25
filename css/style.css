@@ -110,6 +110,10 @@ footer {
 }
 
 /* About page formatting */
+.col {
+    width: 100% 
+}
+
 #myPic {
     margin: 0px 10px;
     float: left;
@@ -233,4 +237,20 @@ p {
     }
 }
 
-/* About media queries */
+/* About content media queries */
+@media only screen and (max-width: 640px) {
+    .row-about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+/* Portfolio content media queries */
