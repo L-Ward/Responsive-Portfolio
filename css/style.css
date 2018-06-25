@@ -24,6 +24,7 @@ header {
 .col-name {
     display: inline;
 }
+
 .col-links {
     display: inline;
 }
@@ -42,8 +43,11 @@ header {
  border-right: 1px solid #dddddd;
 }
 
-.link {
+.float {
     float: right;
+}
+
+.link {
     color: #777777;
     padding: 0px 10px;
     text-decoration: none;
@@ -233,9 +237,13 @@ p {
         width: 100%;
     }
     
-    .link {
-        margin-top: 10px;
+    .float {
         float: none;
+        margin-bottom: inherit;
+    }
+
+    .link {
+        margin-bottom: inherit;
     }
 }
 
