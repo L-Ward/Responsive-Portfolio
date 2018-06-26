@@ -264,12 +264,10 @@ p {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .col-img {
+
+    #myPic {
         float: none;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
+        margin: auto;
     }
 }
